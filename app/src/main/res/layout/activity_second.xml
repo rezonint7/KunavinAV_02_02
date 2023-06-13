@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_margin="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="178dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/read_number"
+        android:inputType="number"
+        android:textColorHint="@color/hint"
+        android:paddingHorizontal="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:layout_marginHorizontal="28dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/spinner_from"
+                android:layout_width="148dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="28dp"
+                android:background="@drawable/edit_text"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="28dp"
+                android:text="@string/to"
+                android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/spinner_to"
+                android:layout_width="148dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="28dp"
+                android:background="@drawable/edit_text"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="28dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/result"
+        android:textColorHint="@color/hint"
+        android:enabled="false"
+        android:paddingHorizontal="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_result"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/button_style"
+        android:text="@string/get_result"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="108dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

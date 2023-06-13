@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KunavinAV_02_02</string>
+    <string name="title">Конвертер единиц информации</string>
+    <string name="login">Введите логин</string>
+    <string name="password">Введите пароль</string>
+    <string name="start">Начать</string>
+    <string name="choose">Выбор единиц информации</string>
+    <string name="read_number">Введите число</string>
+    <string name="get_result">Вычислить</string>
+    <string name="result">Результат</string>
+    <string name="result_number">Введенное число</string>
+    <string name="register">Регистрация</string>
+    <string name="from">Из</string>
+    <string name="to">В</string>
+    
+    <string-array name="array_list">
+        <item>байт</item>
+        <item>килобайт</item>
+        <item>мегабайт</item>
+        <item>гигабайт</item>
+    </string-array>
+</resources>
